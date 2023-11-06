@@ -1,0 +1,305 @@
+{% load static %}
+<!---->
+
+<div class="em-wrapper-header">
+  <div id="em-mheader" class="visible-xs container">
+    <div id="em-mheader-top" class="row">
+      <div id="em-mheader-logo" class="col-xs-4">
+        <div class="em-logo">
+          <a href="{% url "index" %}" title="Fashion Commerce" class="logo"
+            ><strong>Fashion Commerce</strong
+            ><img src="{% static 'homepage/images/logo_small.png' %} " alt="Fashion Commerce"
+          /></a>
+        </div>
+      </div>
+      <!-- /#em-mheader-logo -->
+      <div class="col-xs-20">
+        <div class="em-top-search">
+          <div class="em-header-search-mobile">
+            <form method="get">
+              <div class="form-search no_cate_search">
+                <div class="text-search">
+                  <input
+                    id="search-mobile"
+                    type="text"
+                    name="q"
+                    value=""
+                    class="input-text"
+                    maxlength="128"
+                  />
+                  <button type="submit" title="Search" class="button">
+                    <span><span>Search</span></span>
+                  </button>
+                  <div
+                    id="search_autocomplete_mobile"
+                    class="search-autocomplete"
+                  ></div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- /.em-header-search-mobile -->
+        </div>
+        <!-- /.em-top-search -->
+        <div class="em-top-cart">
+          <div class="em-wrapper-topcart-mobile em-no-quickshop">
+            <div class="em-container-topcart">
+              <div class="em-summary-topcart">
+                <a
+                  id="em-amount-cart-link"
+                  title="Shopping Cart"
+                  class="em-amount-topcart"
+                  href="cart.html"
+                >
+                  <span class="em-topcart-text">My Cart:</span>
+                  <span class="em-topcart-qty">0</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- /#em-mheader-top -->
+  </div>
+  <!-- /#em-mheader -->
+  <div class="hidden-xs em-header-style08">
+    <div class="em-header-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-24">
+            <div class="f-left">
+
+            </div>
+            <!-- /.f-left -->
+            <div class="">
+              <div class="em-search f-right">
+                <div class="em-top-search">
+                  <div class="em-wrapper-js-search em-search-style01">
+                    <div class="em-wrapper-search em-no-category-search">
+                      <a
+                        class="em-search-icon"
+                        title="Search"
+                        href="javascript:void(0);"
+                        ><span>Search</span></a
+                      >
+                      <div class="em-container-js-search" style="display: none">
+                        <form id="search_mini_form" method="get">
+                          <div class="form-search no_cate_search">
+                            <div class="text-search">
+                              <label for="search">Search:</label>
+                              <input
+                                id="search"
+                                type="text"
+                                name="q"
+                                value=""
+                                class="input-text"
+                                maxlength="128"
+                                placeholder="Search entire store here..."
+                              />
+                              <button
+                                type="submit"
+                                title="Search"
+                                class="button"
+                              >
+                                <span><span>Search</span></span>
+                              </button>
+                            </div>
+                          </div>
+                        </form>
+                        <!-- /#search_mini_form -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.em-wrapper-js-search -->
+                </div>
+              </div>
+              <!-- /.em-search -->
+              <div class="em-top-links">
+                <div class="f-right"></div>
+                <div class="f-right">
+
+                </div>
+                <ul class="list-inline f-right">
+                  <li>
+                    <a
+                      class="em-register-link"
+                      href="{% url "register" %}"
+                      title="Register"
+                      >Register</a
+                    >
+                  </li>
+                </ul>
+                <div
+                  id="em-login-link"
+                  class="account-link f-right em-non-login"
+                >
+                  <a
+                    href="{% url "login" %}"
+                    class="link-account"
+                    id="link-login"
+                    title="Login"
+                    >Login</a
+                  >
+
+                  <!-- /#em-account-login-form -->
+                </div>
+                <!-- /#em-login-link -->
+              </div>
+              <!-- /.em-top-links -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.em-header-top -->
+    <div id="em-fixed-top"></div>
+    <div class="em-header-bottom em-fixed-top">
+      <div class="container em-menu-fix-pos">
+        <div class="row">
+          <div class="col-sm-24">
+            <div class="em-logo f-left">
+              <a href="{% url "index" %}" title="Fashion Commerce" class="logo"
+                ><strong>Fashion Commerce</strong
+                ><img
+                  class="retina-img"
+                  src="{% static 'homepage/images/logo.png' %} "
+                  alt="Fashion Commerce"
+              /></a>
+            </div>
+            <div class="em-logo-sticky f-left">
+              <a href="{% url "index" %}" title="Fashion Commerce" class="logo"
+                ><img src="{% static 'homepage/images/logo_small.png' %}" alt="Fashion Commerce" />
+              </a>
+            </div>
+            <div class="em-search em-search-sticky f-right">
+              <div class="em-top-search">
+                <div class="em-wrapper-js-search em-search-style01">
+                  <div class="em-wrapper-search">
+                    <a
+                      class="em-search-icon"
+                      title="Search"
+                      href="javascript:void(0);"
+                      ><span>Search</span></a
+                    >
+                    <div class="em-container-js-search" style="display: none">
+                      <form id="search_mini_form_fixed_top" method="get">
+                        <div class="form-search">
+                          <label for="search">Search:</label>
+                          <input
+                            id="search-fixed-top"
+                            type="text"
+                            name="q"
+                            value=""
+                            class="input-text"
+                            maxlength="128"
+                            placeholder="Search entire store here..."
+                          />
+                          <button type="submit" title="Search" class="button">
+                            <span><span>Search</span></span>
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.em-wrapper-js-search -->
+              </div>
+            </div>
+            <!-- /.em-search -->
+            <div class="em-top-cart-sticky em-top-cart f-right">
+              <div
+                class="em-wrapper-js-topcart em-wrapper-topcart em-no-quickshop"
+              >
+                <div class="em-container-topcart">
+                  <div class="em-summary-topcart">
+                    <a
+                      class="em-amount-js-topcart em-amount-topcart"
+                      title="Shopping Cart"
+                      href="cart.html"
+                    >
+                      <span class="em-topcart-text">Giỏ hàng:</span>
+                      <span class="em-topcart-qty">0</span>
+                    </a>
+                  </div>
+                  <div
+                    class="em-container-js-topcart topcart-popup"
+                    style="display: none"
+                  >
+                    <div class="topcart-popup-content">
+                      <p class="em-block-subtitle">Shopping Cart</p>
+                      <div class="topcart-content">
+                        <p class="amount-content">
+                          You have no items in your shopping cart.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /.em-wrapper-js-topcart -->
+            </div>
+            <!-- /.em-top-cart -->
+            <div class="em-menu-hoz f-right">
+              <div id="em-main-megamenu">
+                <div class="em-menu">
+                  <div class="megamenu-wrapper wrapper-4_7164">
+                    <div class="em_nav" id="toogle_menu_4_7164">
+                      <ul class="hnav em_hoz_menu effect-menu">
+
+
+                        <li
+                        class="menu-item-link menu-item-depth-0 menu-item-parent"
+                        >
+                        <a class="em-menu-link" href="{ {% url "index" %}">
+                          <span> Trang Chủ </span>
+                        </a>
+                      </li>
+                        <li
+                        class="menu-item-link menu-item-depth-0 menu-item-parent"
+                        >
+                        <a class="em-menu-link" href="{% url "all_product" %}">
+                          <span> Sản Phẩm </span>
+                        </a>
+                      </li>
+                        <li
+                        class="menu-item-link menu-item-depth-0 menu-item-parent"
+                        >
+                        <a class="em-menu-link" href="#">
+                          <span> Liên Hệ </span>
+                        </a>
+                      </li>
+                        <li
+                        class="menu-item-link menu-item-depth-0 menu-item-parent"
+                        >
+                        <a class="em-menu-link" href="#">
+                          <span> Hỗ Trợ </span>
+                        </a>
+                      </li>
+
+
+
+                      </ul>
+                      <!-- /.hnav em_hoz_menu -->
+                    </div>
+                    <!-- /.em_nav -->
+                  </div>
+                  <!-- /.megamenu-wrapper -->
+                </div>
+                <!-- /.em-menu -->
+              </div>
+              <!-- /#em-main-megamenu -->
+            </div>
+            <!-- /.em-menu-hoz -->
+          </div>
+        </div>
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.em-header-bottom -->
+  </div>
+</div>
+<!-- /.em-wrapper-header -->
+
+

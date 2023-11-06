@@ -1,0 +1,90 @@
+{% load static %}
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Fashion : Everything Template</title>
+    <meta
+      name="description"
+      content="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="HTMLCooker" />
+
+    <!-- ================= Favicon ================== -->
+    <!-- Standard -->
+
+    <!-- Jquery Js -->
+    <script
+      type="text/javascript"
+      src="{% static 'homepage/js/jquery-1.11.3.min.js' %}"
+    ></script>
+    <!-- Bootstrap Js -->
+    <script
+      type="text/javascript"
+      src="{% static 'homepage/js/bootstrap.min.js' %} "
+    ></script>
+    <!-- Lazy Load Js -->
+    <script
+      type="text/javascript"
+      src="{% static 'homepage/js/jquery.lazyload.min.js' %} "
+    ></script>
+    <!-- Owl Carousel Js -->
+    <script
+      type="text/javascript"
+      src="{% static 'homepage/ js/owl.carousel.js' %}"
+    ></script>
+    <!-- Ios Orientation Change Js -->
+    <script
+      type="text/javascript"
+      src="{% static 'homepage/js/ios-orientationchange-fix.js' %} "
+    ></script>
+    <!-- Hover Intent Js -->
+    <script
+      type="text/javascript"
+      src="{% static 'homepage/ js/jquery.hoverIntent.js' %}"
+    ></script>
+    <!-- Select UI Js -->
+    <script
+      type="text/javascript"
+      src="{% static 'homepage/js/selectUl.js' %} "
+    ></script>
+    <!-- Throttle Js -->
+    <script
+      type="text/javascript"
+      src="{% static 'homepage/js/jquery.ba-throttle-debounce.js' %} "
+    ></script>
+    <!-- EM Js -->
+    <script
+      type="text/javascript"
+      src="{% static 'homepage/js/em0131.js' %} "
+    ></script>
+    <!-- MegaMenu Js -->
+    <script
+      type="text/javascript"
+      src="{% static 'homepage/js/js/megamenu.js' %} "
+    ></script>
+    <!-- Responsive Tab Js -->
+    <script
+      type="text/javascript"
+      src="{% static 'homepage/js/jquery.custom.responsiveTabs.js' %} "
+    ></script>
+    <!-- Fancybox Js -->
+    <script
+      type="text/javascript"
+      src="{% static 'homepage/js/jquery.fancybox.js' %} "
+    ></script>
+    <!-- Custom Js -->
+    <script
+      type="text/javascript"
+      src="{% static 'homepage/js/custom.js' %} "
+    ></script>
+
+    {% block cssblock %}{% endblock cssblock %}
+  </head>
+
+  <body class="cms-index-index">
+    {% block js_block %}{% endblock js_block %}
+  </body>
+</html>

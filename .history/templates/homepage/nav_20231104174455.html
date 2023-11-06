@@ -1,0 +1,107 @@
+<nav>
+  <div class="em-wrapper-area02">
+    <div class="menu-wrapper hidden-xs">
+      <div id="menuleftText" class="all_categories">
+        <div class="menuleftText-title">
+          <div class="menuleftText">
+            <span class="em-text-upercase">Categories</span>
+          </div>
+        </div>
+      </div>
+      <!-- /.menuleftText -->
+      <div class="menuleft">
+        <div id="menu-default" class="mega-menu em-menu-icon">
+          <div class="megamenu-wrapper wrapper-5_4607">
+            <div class="em_nav" id="toogle_menu_5_4607">
+              <ul class="vnav em-menu-icon effect-menu em-menu-long">
+                {% if root_categories %}
+                <!---->
+                {% for category in root_categories %}
+
+                <li
+                  class="menu-item-link menu-item-depth-0 fa fa-automobile menu-item-parent"
+                >
+                  <a class="em-menu-link" href="#">
+                    <span> {{category.title}} </span>
+                  </a>
+                  <!---->
+
+                  {% if category.children.all %}
+
+                  <ul
+                    class="menu-container"
+                    style="
+                      background-image: url(images/menu/16644541718_a9bf09d186_b.jpg);
+                      background-repeat: no-repeat;
+                      background-position: right bottom;
+                    "
+                  >
+                    {% for child in category.children.all %}
+                    <li
+                      class="menu-item-hbox menu-item-depth-1 menu-item-parent"
+                      style=""
+                    >
+                      <ul class="menu-container">
+                        <li
+                          class="menu-item-vbox menu-item-depth-2 menu-item-parent"
+                          style=""
+                        >
+                          <ul class="menu-container">
+                            <li
+                              class="menu-item-hbox menu-item-depth-3 col-menu menu_col18 grid_18 bkg-menu01 menu-item-parent"
+                              style=""
+                            >
+                              <ul class="menu-container">
+                                <li
+                                  class="menu-item-vbox menu-item-depth-4 col-sm-5 menu-item-parent"
+                                  style=""
+                                >
+                                  <ul class="menu-container">
+                                    <li
+                                      class="menu-item-text menu-item-depth-5"
+                                    >
+                                      <h4>{{child.title}}</h4>
+                                      <ul class="list-text">
+                                        <li>
+                                          <a href="#">Bathtime Goods</a>
+                                        </li>
+                                        <li>
+                                          <a href="#">Bedding</a>
+                                        </li>
+                                        <li>
+                                          <a href="#">Blankets</a>
+                                        </li>
+                                        <li>
+                                          <a href="#">Shower Curtains</a>
+                                        </li>
+                                      </ul>
+                                    </li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+
+                    {% endfor %}
+                    <!-- /.menu-item-hbox -->
+                  </ul>
+
+                  {% endif %}
+                </li>
+                {% endfor %} {% endif %}
+
+                <!-- /.menu-item-link -->
+              </ul>
+              <!-- /.vnav -->
+            </div>
+          </div>
+          <!-- /.megamenu-wrapper -->
+        </div>
+      </div>
+      <!-- /.menuleft -->
+    </div>
+  </div>
+</nav>

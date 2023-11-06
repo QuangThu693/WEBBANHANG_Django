@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Đăng ký thành công</title>
+  </head>
+  <body
+    style="
+      text-align: center;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    "
+  >
+    <div
+      style="
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px #888;
+      "
+    >
+      <h1 style="color: #007bff">Đăng ký thành công</h1>
+      <p>Xin chào, <strong>{{ user.username }}</strong>!</p>
+      <p>Email: {{ user.email }}</p>
+      <p>Số điện thoại: {{ user.phone_number }}</p>
+      <p>Địa chỉ: {{ user.address }}</p>
+
+      <div
+        id="redirect-message"
+        style="color: #888; font-size: 16px; margin-top: 20px"
+      >
+        Bạn sẽ được chuyển hướng sau 3 giây.
+      </div>
+    </div>
+
+    <script>
+      setTimeout(function () {
+        window.location.href = "{% url 'login' %}";
+      }, 3000);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+{% load static %}
+<!---->
+
+<ul class="hnav em_hoz_menu effect-menu">
+  {% comment %}
+  <li class="menu-item-link menu-item-depth-0 menu-item-parent">
+    <a class="em-menu-link" href="#">
+      <span> Home </span>
+    </a>
+  </li>
+  <li class="menu-item-link menu-item-depth-0 menu-item-parent">
+    <a class="em-menu-link" href="#">
+      <span> Home </span>
+    </a>
+  </li>
+  {% endcomment %} {% if menu %} {% for item in menu %}
+  <li class="menu-item-link menu-item-depth-0 menu-item-parent">
+    <a class="em-menu-link" href="#">
+      <span> {{item}} </span>
+    </a>
+  </li>
+  {% endfor %} {% else %}
+  <h3>Không có dữ liệu Menu</h3>
+  {% endif %}
+</ul>

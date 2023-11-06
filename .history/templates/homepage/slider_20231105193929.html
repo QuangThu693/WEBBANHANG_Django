@@ -1,0 +1,56 @@
+{% load static %}
+<div class="em-wrapper-area03">
+  <div class="em-slideshow">
+    <div class="em-owlcarousel-slideshow">
+      <div id="em_owlcarousel_2_2484_sync1" class="owl-carousel">
+        {% if sliders %}
+        <!---->
+        {% for slider in sliders %}
+        <div class="item">
+          <a href="#">
+            <img
+              alt="{{slider.image}}"
+              class="lazyOwl img-responsive"
+              src="{{slider.image}}"
+              data-src="{{slider.image}}"
+              style="width: 100%; height: 600px"
+            />
+          </a>
+          <div class="em-owlcarousel-description">
+            <div class="fadeInLeft em-owlcarousel-des em-owlcarousel-des-0">
+              <h3
+                style="
+                  font: italic 2rem/1 Lora, Helvetica Neue, Helvetica, Arial,
+                    sans-serif;
+                  margin-bottom: 1.7rem;
+                "
+              >
+                {{slider.title}}
+              </h3>
+              <h1
+                style="
+                  font: 700 6rem/1 Raleway, Helvetica Neue, Helvetica, Arial,
+                    sans-serif;
+                  margin-bottom: 3rem;
+                "
+                class="em-text-upercase"
+              >
+                em stores
+              </h1>
+              <a href="#" class="button-link first"
+                ><span>purchase now</span></a
+              >
+              <a href="#" class="button-link"><span>shop now</span></a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+        <!---->
+        {% endif %}
+      </div>
+      <!-- /# em_owlcarousel_2_2484_sync1 -->
+    </div>
+    <!-- /.em-owlcarousel-slideshow -->
+  </div>
+  <!-- /.em-slideshow -->
+</div>
